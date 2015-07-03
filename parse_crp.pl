@@ -175,9 +175,3 @@ foreach my $bmap (@{$books->all}) {
 		}
 	}
 }
-
-=comment
-foreach my $map (@{$books->all}) {
-	print "title: $map->{'Title'}\n";
-}
-=comment
