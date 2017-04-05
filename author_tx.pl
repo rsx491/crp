@@ -7,8 +7,8 @@ my %attr = (RaiseError=> 1, HandleError=>\&handle_error);
 my $dsn = "DBI:mysql:database=crp;host=localhost;port=3306";
 my $dbh = DBI->connect(
 	$dsn,
-	'root',
-	'gunslinger',
+	'username',
+	'password',
 	\%attr,
 ) or die $DBI::errstr;
 
