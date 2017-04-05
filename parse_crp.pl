@@ -28,8 +28,8 @@ my @author_photos = &{sub{
 my $dsn = "DBI:mysql:database=crp;host=localhost;port=3306";
 my $dbh = DBI->connect(
 						$dsn, 
-						'root', 
-						'gunslinger',
+						'username', 
+						'password',
 						{ RaiseError => 1, HandleError=>\&handle_error },
 ) or die $DBI::errstr;
 						
